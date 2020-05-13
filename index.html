@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
-<body>
+<body className="bo">
 <div class="coach"> Shapes </div>
 <div id="root"></div>
 
@@ -15,24 +15,217 @@
 
 
 
+
 class Reactpractice extends React.Component {
 
     handleClick() {
 
-         $(".holder").show() 
-         $(".chat").hide()  
+         $(".holder").fadeIn(3000) 
+         $(".chat").hide()
+         $(".ddd").hide()  
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+         $(".ccc").hide()
+         
+    }
+     zfzClick() {
+
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         
+        
+         $(".holder").hide() 
+    }
+     diamondClick() {
+
+         $(".dia").fadeIn(3000) 
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+         $(".ccc").hide()
+
+    }
+     dfdClick() {
+
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".dia").hide()  
+             
+    }
+    circleClick()  {
+
+         $(".cir").fadeIn(3000) 
+         $(".ccc").hide()
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
           
 
     }
+    cfcClick()  {
+
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".cir").hide() 
+
+    }
+    hexagonClick()  {
+
+         $(".hex").fadeIn(3000) 
+         $(".ccc").hide()
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+         
+
+    }
+    hfhClick()  {
+ 
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".hex").hide() 
+
+    }
+    rectangleClick()  {
+
+         $(".rec").fadeIn(3000) 
+         $(".ccc").hide()
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+        
+
+    }
+    rfrClick()  {
+
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".rec").hide() 
+
+    }
+    triangleClick()  {
+
+         $(".tri").fadeIn(3000) 
+         $(".ccc").hide()
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+     
+
+    }
+    tftClick()  {
+
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".tri").hide() 
+
+    }
+    squareClick()  {
+
+         $(".squ").fadeIn(3000)  
+         $(".ccc").hide()
+         $(".ddd").hide() 
+         $(".chat").hide()
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+        
+
+    }
+     sfsClick()  {
+ 
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".squ").hide() 
+
+    }
+
+
+    
     render() {
+
+  
        
         return (
-         <div> 
-         	<div className="mentor">This page will help to teach babies </div> 
-            <div className="chat" onClick={this.handleClick}>squre </div>
-            <div className="holder"> <img src="images/zoe.jpg"/> </div>
-            <div>  </div>
-         </div>
+
+         <div className="all"> 
+         	<div className="mentor">Let´s Learn Shapes </div> 
+
+            <div className="chat" onClick={this.handleClick}>Zoe´s Picture </div>
+            <div className="holder" onClick={this.zfzClick}> <img src="images/zoe.jpg"/> </div>
+           
+            <div className="ddd" onClick={this.diamondClick}>Diamond </div>
+            <div className="dia" onClick={this.dfdClick}> <img src="images/diamond.jpg"/> </div>
+            
+            <div className="ccc" onClick={this.circleClick}>Circle </div>
+            <div className="cir" onClick={this.cfcClick}> <img src="images/circle.jpg"/> </div>
+            
+            <div className="hhh" onClick={this.hexagonClick}>Hexagon</div>
+            <div className="hex" onClick={this.hfhClick}> <img src="images/hexagon.jpg"/> </div>
+            
+            <div className="rrr" onClick={this.rectangleClick}>Rectangle </div>
+            <div className="rec" onClick={this.rfrClick}> <img src="images/rectangle.jpg"/> </div>
+            
+            <div className="ttt" onClick={this.triangleClick}>Triangle </div>
+            <div className="tri" onClick={this.tftClick}> <img src="images/triangle.jpg"/> </div>
+            
+            <div className="sss" onClick={this.squareClick}>Square </div>
+            <div className="squ" onClick={this.sfsClick}> <img src="images/square.jpg"/> </div>
+            <audio controls> <source src="sqr.ogg" type="sqr/ogg"/> </audio>
+            </div>
 
           
 

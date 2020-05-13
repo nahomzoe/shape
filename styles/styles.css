@@ -1,13 +1,66 @@
-.mentor{
-	color:red;
-	font-size: 25px;
-    font-style: italic;
+.bo{
+	 background color: red;
+} 
+ .all{
+ 	 color: green;
+	 text-align: center;
+	 font-size: 50px;
+	 background: lightblue;
+
 }
-.caoch{
-	color: yellow;
-	font-size: : 45px;
+.mentor{
+	color:darkblue;
+	font-size: 80px;
+    font-style: bold;
+    text-align: center;
+}
+.chat{
+	 
+}
+.ddd{
+	
+}
+.ttt{
+	
+}
+.sss{
+	
+}
+.rrr{
+	
+}
+.ccc{
+	
+}
+.hhh{
+	
 }
 .holder{
-	display:  none;
-	width: 45px;
+	display: none;
+	text-align: center;
+	
+}
+.dia{
+	display: none;
+	
+}
+.tri{
+	display: none;
+	
+}
+.squ{
+	display: none;
+	
+}
+.hex{
+	display: none;
+	
+}
+.cir{
+	display: none;
+	
+}
+.rec{
+	display: none;
+	
 }
