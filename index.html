@@ -19,8 +19,9 @@
 class Reactpractice extends React.Component {
 
     handleClick() {
-
-         $(".holder").fadeIn(3000) 
+$(".zozo").show() 
+         $(".holder").fadeIn(3000)
+         
          $(".chat").hide()
          $(".ddd").hide()  
          $(".rrr").hide()
@@ -30,6 +31,7 @@ class Reactpractice extends React.Component {
          $(".ccc").hide()
          
     }
+    
      zfzClick() {
 
          $(".chat").fadeIn(500)
@@ -39,8 +41,6 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-         
-        
          $(".holder").hide() 
     }
      diamondClick() {
@@ -206,25 +206,34 @@ class Reactpractice extends React.Component {
 
             <div className="chat" onClick={this.handleClick}>Zoe´s Picture </div>
             <div className="holder" onClick={this.zfzClick}> <img src="images/zoe.jpg"/> </div>
+            <audio controls className="zozo"> <source src="voice/zozo.ogg"  type="audio/ogg"/> </audio>
            
             <div className="ddd" onClick={this.diamondClick}>Diamond </div>
             <div className="dia" onClick={this.dfdClick}> <img src="images/diamond.jpg"/> </div>
+            <audio controls className="di"> <source src="voice/di.ogg"  type="audio/ogg"/> </audio>
             
             <div className="ccc" onClick={this.circleClick}>Circle </div>
             <div className="cir" onClick={this.cfcClick}> <img src="images/circle.jpg"/> </div>
+            <audio controls className="ci"> <source src="voice/ci.ogg"  type="audio/ogg"/> </audio>
             
             <div className="hhh" onClick={this.hexagonClick}>Hexagon</div>
             <div className="hex" onClick={this.hfhClick}> <img src="images/hexagon.jpg"/> </div>
+            <audio controls className="he"> <source src="voice/he.ogg"  type="audio/ogg"/> </audio>
             
             <div className="rrr" onClick={this.rectangleClick}>Rectangle </div>
             <div className="rec" onClick={this.rfrClick}> <img src="images/rectangle.jpg"/> </div>
+            <audio controls className="re"> <source src="voice/re.ogg"  type="audio/ogg"/> </audio>
             
             <div className="ttt" onClick={this.triangleClick}>Triangle </div>
             <div className="tri" onClick={this.tftClick}> <img src="images/triangle.jpg"/> </div>
+            <audio controls className="tr"> <source src="voice/tr.ogg"  type="audio/ogg"/> </audio>
             
             <div className="sss" onClick={this.squareClick}>Square </div>
             <div className="squ" onClick={this.sfsClick}> <img src="images/square.jpg"/> </div>
-            <audio controls> <source src="sqr.ogg" type="sqr/ogg"/> </audio>
+            <audio controls className="sq"> <source src="voice/sq.ogg"  type="audio/ogg"/> </audio> 
+
+          
+
             </div>
 
           
