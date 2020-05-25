@@ -13,36 +13,33 @@
 
 <script type="text/babel">
 
-
-
-
 class Reactpractice extends React.Component {
 
     handleClick() {
-         $(".holder").fadeIn(3000)
-          $(".zozo").css("display","inline-block")
-         $(".chat").hide()
-         $(".ddd").hide()  
-         $(".rrr").hide()
-         $(".ttt").hide()
-         $(".sss").hide()
-         $(".hhh").hide()
-         $(".ccc").hide()
+        $(".holder").fadeIn(3000)
+        $(".zozo").css("display","inline-block")
+        $(".chat").hide()
+        $(".ddd").hide()  
+        $(".rrr").hide()
+        $(".ttt").hide()
+        $(".sss").hide()
+        $(".hhh").hide()
+        $(".ccc").hide()
          
     }
     
      zfzClick() {
 
-         $(".chat").fadeIn(500)
-         $(".ccc").fadeIn(2000)
-         $(".hhh").fadeIn(3000) 
-         $(".ddd").fadeIn(1000)  
-         $(".rrr").fadeIn(4000)
-         $(".ttt").fadeIn(5000)
-         $(".sss").fadeIn(6000)
-          $(".zozo").hide() 
-         $(".holder").hide() 
-    }
+        $(".chat").fadeIn(500)
+        $(".ccc").fadeIn(2000)
+        $(".hhh").fadeIn(3000) 
+        $(".ddd").fadeIn(1000)  
+        $(".rrr").fadeIn(4000)
+        $(".ttt").fadeIn(5000)
+        $(".sss").fadeIn(6000)
+        $(".zozo").hide() 
+        $(".holder").hide() 
+    
      diamondClick() {
 
          $(".dia").fadeIn(3000) 
@@ -107,8 +104,6 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
-         
-
     }
     hfhClick()  {
  
@@ -126,7 +121,7 @@ class Reactpractice extends React.Component {
     rectangleClick()  {
 
          $(".rec").fadeIn(3000) 
-          $(".re").css("display","inline-block")
+         $(".re").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -134,8 +129,6 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
-        
-
     }
     rfrClick()  {
 
@@ -162,7 +155,6 @@ class Reactpractice extends React.Component {
          $(".sss").hide()
          $(".hhh").hide()
      
-
     }
     tftClick()  {
 
@@ -180,7 +172,7 @@ class Reactpractice extends React.Component {
     squareClick()  {
 
          $(".squ").fadeIn(3000)  
-          $(".sq").css("display","inline-block")
+         $(".sq").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -188,29 +180,25 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
-        
 
     }
      sfsClick()  {
- 
-         $(".chat").fadeIn(500)
-         $(".ccc").fadeIn(2000)
-         $(".hhh").fadeIn(3000) 
-         $(".ddd").fadeIn(1000)  
-         $(".rrr").fadeIn(4000)
-         $(".ttt").fadeIn(5000)
-         $(".sss").fadeIn(6000)
-          $(".sq").hide() 
-         $(".squ").hide() 
+        $(".chat").fadeIn(500)
+        $(".ccc").fadeIn(2000)
+        $(".hhh").fadeIn(3000) 
+        $(".ddd").fadeIn(1000)  
+        $(".rrr").fadeIn(4000)
+        $(".ttt").fadeIn(5000)
+        $(".sss").fadeIn(6000)
+        $(".sq").hide() 
+        $(".squ").hide() 
 
     }
-
-
-    
+ 
     render() {
-
-  
-       
+        // PARENT
+        var dimond_element = <DimondChild name={"Dimond"} diamondClick={this.diamondClick} dfdClick={this.dfdClick} />
+        
         return (
 
          <div className="all"> 
@@ -220,9 +208,7 @@ class Reactpractice extends React.Component {
             <div className="holder" onClick={this.zfzClick}> <img src="images/zoe.jpg"/> </div>
             <audio controls className="zozo"> <source src="voice/zozo.ogg"  type="audio/ogg"/> </audio>
            
-            <div className="ddd" onClick={this.diamondClick}>Diamond </div>
-            <div className="dia" onClick={this.dfdClick}> <img src="images/diamond.jpg"/> </div>
-            <audio controls className="di"> <source src="voice/di.ogg"  type="audio/ogg"/> </audio>
+            {dimond_element}
             
             <div className="ccc" onClick={this.circleClick}>Circle </div>
             <div className="cir" onClick={this.cfcClick}> <img src="images/circle.jpg"/> </div>
@@ -243,12 +229,7 @@ class Reactpractice extends React.Component {
             <div className="sss" onClick={this.squareClick}>Square </div>
             <div className="squ" onClick={this.sfsClick}> <img src="images/square.jpg"/> </div>
             <audio controls className="sq"> <source src="voice/sq.ogg"  type="audio/ogg"/> </audio> 
-
-          
-
-            </div>
-
-          
+        </div>          
 
         );
        
@@ -256,7 +237,27 @@ class Reactpractice extends React.Component {
     }
 } 
 
+class DimondChild extends React.Component {
+    // props <= The Sent info from Parent
+    // state
 
+    // CHILD
+
+    render() {
+        console.log(this.props);
+        console.log("Name I sent from Parent is: " + this.props.name);
+        console.log("WE CAME TO DimondChild class render");
+
+        return (   
+            <div>
+                <div className="ddd" onClick={this.props.diamondClick}>{this.props.name}</div>
+                <div className="dia" onClick={this.props.dfdClick}> <img src="images/diamond.jpg"/> </div>             
+                <audio controls className="di"> <source src="voice/di.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
 
 
 
