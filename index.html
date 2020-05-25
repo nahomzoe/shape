@@ -13,37 +13,39 @@
 
 <script type="text/babel">
 
+
+
+
 class Reactpractice extends React.Component {
 
     handleClick() {
-        $(".holder").fadeIn(3000)
-        $(".zozo").css("display","inline-block")
-        $(".chat").hide()
-        $(".ddd").hide()  
-        $(".rrr").hide()
-        $(".ttt").hide()
-        $(".sss").hide()
-        $(".hhh").hide()
-        $(".ccc").hide()
+
+         $(".holder").fadeIn(3000)
+         $(".zozo").show() 
+         $(".chat").hide()
+         $(".ddd").hide()  
+         $(".rrr").hide()
+         $(".ttt").hide()
+         $(".sss").hide()
+         $(".hhh").hide()
+         $(".ccc").hide()
          
     }
     
      zfzClick() {
 
-        $(".chat").fadeIn(500)
-        $(".ccc").fadeIn(2000)
-        $(".hhh").fadeIn(3000) 
-        $(".ddd").fadeIn(1000)  
-        $(".rrr").fadeIn(4000)
-        $(".ttt").fadeIn(5000)
-        $(".sss").fadeIn(6000)
-        $(".zozo").hide() 
-        $(".holder").hide() 
-    
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".holder").hide() 
+    }
      diamondClick() {
 
          $(".dia").fadeIn(3000) 
-         $(".di").css("display","inline-block") 
          $(".ddd").hide() 
          $(".chat").hide()
          $(".rrr").hide()
@@ -62,14 +64,12 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-          $(".di").hide() 
          $(".dia").hide()  
              
     }
     circleClick()  {
 
-         $(".cir").fadeIn(3000)
-         $(".ci").css("display","inline-block") 
+         $(".cir").fadeIn(3000) 
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -89,14 +89,12 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-          $(".ci").hide() 
          $(".cir").hide() 
 
     }
     hexagonClick()  {
 
          $(".hex").fadeIn(3000) 
-          $(".he").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -104,6 +102,8 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
+         
+
     }
     hfhClick()  {
  
@@ -114,14 +114,12 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-          $(".he").hide() 
          $(".hex").hide() 
 
     }
     rectangleClick()  {
 
          $(".rec").fadeIn(3000) 
-         $(".re").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -129,6 +127,8 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
+        
+
     }
     rfrClick()  {
 
@@ -139,14 +139,12 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-          $(".re").hide() 
          $(".rec").hide() 
 
     }
     triangleClick()  {
 
          $(".tri").fadeIn(3000) 
-          $(".tr").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -155,6 +153,7 @@ class Reactpractice extends React.Component {
          $(".sss").hide()
          $(".hhh").hide()
      
+
     }
     tftClick()  {
 
@@ -165,14 +164,12 @@ class Reactpractice extends React.Component {
          $(".rrr").fadeIn(4000)
          $(".ttt").fadeIn(5000)
          $(".sss").fadeIn(6000)
-          $(".tr").hide() 
          $(".tri").hide() 
 
     }
     squareClick()  {
 
          $(".squ").fadeIn(3000)  
-         $(".sq").css("display","inline-block")
          $(".ccc").hide()
          $(".ddd").hide() 
          $(".chat").hide()
@@ -180,62 +177,62 @@ class Reactpractice extends React.Component {
          $(".ttt").hide()
          $(".sss").hide()
          $(".hhh").hide()
+        
 
     }
      sfsClick()  {
-        $(".chat").fadeIn(500)
-        $(".ccc").fadeIn(2000)
-        $(".hhh").fadeIn(3000) 
-        $(".ddd").fadeIn(1000)  
-        $(".rrr").fadeIn(4000)
-        $(".ttt").fadeIn(5000)
-        $(".sss").fadeIn(6000)
-        $(".sq").hide() 
-        $(".squ").hide() 
+ 
+         $(".chat").fadeIn(500)
+         $(".ccc").fadeIn(2000)
+         $(".hhh").fadeIn(3000) 
+         $(".ddd").fadeIn(1000)  
+         $(".rrr").fadeIn(4000)
+         $(".ttt").fadeIn(5000)
+         $(".sss").fadeIn(6000)
+         $(".squ").hide() 
 
     }
- 
+
+
+    
     render() {
-        // PARENT
+
+         // PARENT
+        var zoe_element = <ZoeChild name={"Zoe's Picture"} handleClick={this.handleClick} zfzClick={this.zfzClick} />
         var dimond_element = <DimondChild name={"Dimond"} diamondClick={this.diamondClick} dfdClick={this.dfdClick} />
-        
+        var circle_element = <CircleChild name={"Circle"} circleClick={this.circleClick} cfcClick={this.cfcClick} />
+        var hexagon_element = <HexagonChild name={"Hexagon"} hexagonClick={this.hexagonClick} hfhClick={this.hfhClick} />
+        var rectangle_element = <RectangleChild name={"Rectangle"} rectangleClick={this.rectangleClick} rfrClick={this.rfrClick} />
+        var triangle_element = <TriangleChild name={"Triangle"} triangleClick={this.triangleClick} tftClick={this.tftClick} />
+        var square_element = <SquareChild name={"Square"} squareClick={this.squareClick} sfsClick={this.sfsClick} />
+
+  
+       
         return (
 
          <div className="all"> 
          	<div className="mentor">Let´s Learn Shapes </div> 
 
-            <div className="chat" onClick={this.handleClick}>Zoe´s Picture </div>
-            <div className="holder" onClick={this.zfzClick}> <img src="images/zoe.jpg"/> </div>
-            <audio controls className="zozo"> <source src="voice/zozo.ogg"  type="audio/ogg"/> </audio>
-           
+            {zoe_element}
             {dimond_element}
+            {circle_element}
+            {hexagon_element}
+            {rectangle_element}
+            {triangle_element}
+            {square_element}
             
-            <div className="ccc" onClick={this.circleClick}>Circle </div>
-            <div className="cir" onClick={this.cfcClick}> <img src="images/circle.jpg"/> </div>
-            <audio controls className="ci"> <source src="voice/ci.ogg"  type="audio/ogg"/> </audio>
-            
-            <div className="hhh" onClick={this.hexagonClick}>Hexagon</div>
-            <div className="hex" onClick={this.hfhClick}> <img src="images/hexagon.jpg"/> </div>
-            <audio controls className="he"> <source src="voice/he.ogg"  type="audio/ogg"/> </audio>
-            
-            <div className="rrr" onClick={this.rectangleClick}>Rectangle </div>
-            <div className="rec" onClick={this.rfrClick}> <img src="images/rectangle.jpg"/> </div>
-            <audio controls className="re"> <source src="voice/re.ogg"  type="audio/ogg"/> </audio>
-            
-            <div className="ttt" onClick={this.triangleClick}>Triangle </div>
-            <div className="tri" onClick={this.tftClick}> <img src="images/triangle.jpg"/> </div>
-            <audio controls className="tr"> <source src="voice/tr.ogg"  type="audio/ogg"/> </audio>
-            
-            <div className="sss" onClick={this.squareClick}>Square </div>
-            <div className="squ" onClick={this.sfsClick}> <img src="images/square.jpg"/> </div>
-            <audio controls className="sq"> <source src="voice/sq.ogg"  type="audio/ogg"/> </audio> 
-        </div>          
+        </div>
+
+          
 
         );
        
 
     }
 } 
+
+
+
 
 class DimondChild extends React.Component {
     // props <= The Sent info from Parent
@@ -258,6 +255,105 @@ class DimondChild extends React.Component {
     }
 
 }
+
+
+class ZoeChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+               <div className="chat" onClick={this.props.handleClick}>{this.props.name} </div>
+               <div className="holder" onClick={this.props.zfzClick}> <img src="images/zoe.jpg"/> </div>
+               <audio controls className="zozo"> <source src="voice/zozo.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
+
+class CircleChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+              <div className="ccc" onClick={this.props.circleClick}>{this.props.name} </div>
+              <div className="cir" onClick={this.props.cfcClick}> <img src="images/circle.jpg"/> </div>
+              <audio controls className="ci"> <source src="voice/ci.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
+
+class HexagonChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+              <div className="hhh" onClick={this.props.hexagonClick}>{this.props.name}</div>
+              <div className="hex" onClick={this.props.hfhClick}> <img src="images/hexagon.jpg"/> </div>
+              <audio controls className="he"> <source src="voice/he.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
+
+class RectangleChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+              <div className="rrr" onClick={this.props.rectangleClick}>{this.props.name}</div>
+              <div className="rec" onClick={this.props.rfrClick}> <img src="images/rectangle.jpg"/> </div>
+              <audio controls className="re"> <source src="voice/re.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
+
+class TriangleChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+              <div className="ttt" onClick={this.props.triangleClick}>{this.props.name} </div>
+              <div className="tri" onClick={this.props.tftClick}> <img src="images/triangle.jpg"/> </div>
+              <audio controls className="tr"> <source src="voice/tr.ogg"  type="audio/ogg"/> </audio>
+            </div>
+        )
+    }
+
+}
+
+class SquareChild extends React.Component {
+   
+    render() {
+        
+
+        return (   
+            <div>
+              <div className="sss" onClick={this.props.squareClick}>{this.props.name} </div>
+              <div className="squ" onClick={this.props.sfsClick}> <img src="images/square.jpg"/> </div>
+              <audio controls className="sq"> <source src="voice/sq.ogg"  type="audio/ogg"/> </audio> 
+            </div>
+        )
+    }
+
+}
+
+
 
 
 
